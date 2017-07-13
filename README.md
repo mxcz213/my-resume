@@ -21,6 +21,6 @@ http://localhost:3000/访问
 
 如下图：react 服务端渲染出来的html
 
-![image](https://github.com/mxcz213/my-resume/master/project-img-readme/react-server-render.png)
+![image](https://github.com/mxcz213/my-resume/raw/master/project-img-readme/react-server-render.png)
 
 
