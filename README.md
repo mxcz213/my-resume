@@ -19,4 +19,8 @@ http://localhost:3000/访问
 
 因为node中不认识import ，export这些，所以先打包成es5代码，最后在node server 里面拼接html.
 
+如下图：react 服务端渲染出来的html
+
+![image](https://github.com/mxcz213/my-resume/raw/master/project-img-readme/react-server-render.jpg)
+
 
