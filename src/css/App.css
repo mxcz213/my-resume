@@ -1,0 +1,251 @@
+html{
+  font-size:16px;
+}
+.loading{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: rgba(0,0,0,0.8);
+  z-index:100;
+}
+.loading-pic{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  position: absolute;
+  top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow:0 1px 6px #ccc;
+    animation:loading 1.2s inifinate ease;
+    -webkit-animation:loading 1.2s infinite linear;
+}
+
+@-webkit-keyframes loading{
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loading{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #fff;
+}
+
+.App-header {
+  background-color:rgba(4,177,204,1);
+  height: 140px;
+  padding: 20px;
+  color: white;
+}
+
+.App-header .author{
+  font-size: 24px;
+  font-weight: 100;
+  color:#F8E21F;
+}
+
+.App-header .title{
+  font-size: 20px;
+  font-weight: 100; 
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.base-wrapper {
+  display: flex;
+  align-items:stretch;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right:0;
+  min-height:100%;
+  font-family: "Microsoft YaHei";
+}
+.base-info {
+  /* flex:0 0 250px;
+  width:250px;   兼容安卓浏览器 */
+  flex:1;
+  background: #ccc;
+  padding:20px;
+}
+.base-info .base-info-list{
+  margin:10px 0;
+}
+.base-info .name{
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.base-info .base-info-list{
+  font-size: 0;
+}
+.font-0{
+  font-size: 0;
+}
+.inline-block{
+  display: inline-block;
+  font-size: 14px;
+}
+.icon-logo{
+  border-radius: 50%;
+}
+.work-experience {
+  flex:1;
+  background: #eee; 
+  padding:20px;
+}
+.project-experience{
+  flex:1;
+  background: #eee; 
+  padding:20px;
+}
+.latest-job{
+  display: flex;
+  line-height: 30px;
+}
+.shadow-layout{
+  padding:20px;
+  background: #ECEEF0;
+  box-shadow: 0 1px 6px #52A3B0; 
+  border-radius: 5px;
+}
+.latest-job .title,
+.service-company .title,
+.mySkill .title{
+  font-weight:bolder;
+  font-size: 16px;
+  color:#818ba3;
+}
+.latest-job .job{
+  flex:1;
+}
+.latest-job .school{
+  flex:1;
+}
+.service-company{
+  padding:20px;
+  box-shadow: 0 1px 6px #B0B0B0;
+}
+.service-company .title{
+  /* margin-bottom: 20px; */
+}
+.service-company .company{
+  font-size: 14px;
+  padding:20px;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px;
+}
+.service-company .company:last-child{
+  border-bottom: none;
+}
+.span-dw{
+  display: inline-block;
+  /* width: 50%; */
+  margin-right:10%;
+  font-size: 14px;
+}
+.mySkill-list p{
+  font-size: 14px;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*media*/
+/* @media screen and (max-width: 300px) {
+    body {
+        background-color:lightblue;
+    }
+} */
+@media (-webkit-min-device-pixel-ratio:2), 
+(min-device-pixel-ratio:2),
+(-webkit-min-device-pixel-ratio:3),
+(min-device-pixel-ratio:3)
+{
+  .base-wrapper{
+    flex-direction:column;
+  }
+  .base-info{
+    order:-1;
+  }
+  .App-header .author{
+    font-size: 20px;
+  }
+  .App-header .title{
+    font-size: 18px;
+  }
+  .base-info .name,
+  .inline-block,
+  .mySkill-list p,
+  .span-dw,
+  .service-company .company{
+    font-size: 12px;
+  }
+  .mySkill-list p{
+    line-height: 26px;
+  }
+  .latest-job .title, .service-company .title, .mySkill .title{
+    font-size: 14px;
+  }
+  
+  .project-experience{
+    background: rgb(219, 217, 217);
+  }
+}
+@media screen and (min-width: 1000px){
+  .base-info .name,
+  .inline-block,
+  .mySkill-list p,
+  .span-dw,
+  .service-company .company{
+    font-size: 14px;
+  }
+  .latest-job .title, .service-company .title, .mySkill .title{
+    font-size: 16px;
+  }
+  .App-header .author{
+    font-size: 24px;
+  }
+  .App-header .title{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 850px){
+  .base-wrapper{
+    flex-direction:column;
+  }
+  .base-info{
+    order:-1;
+  }
+}
+
+
+
