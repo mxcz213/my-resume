@@ -49,6 +49,8 @@ html{
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
   width: 80px;
+  display: inline-block;
+  background: url(../images/avart.jpg) no-repeat center center;
   border-radius: 50%;
   box-shadow: 0 0 40px #fff;
 }
@@ -140,11 +142,14 @@ html{
   font-size: 16px;
   color:#818ba3;
 }
-.latest-job .job{
+.latest-job .job,
+.latest-job .school
+{
   flex:1;
 }
-.latest-job .school{
-  flex:1;
+.latest-job .job p,
+.latest-job .school p{
+  padding-left:20px;
 }
 .service-company{
   padding:20px;
@@ -179,12 +184,6 @@ html{
   to { transform: rotate(360deg); }
 }
 
-/*media*/
-/* @media screen and (max-width: 300px) {
-    body {
-        background-color:lightblue;
-    }
-} */
 @media (-webkit-min-device-pixel-ratio:2), 
 (min-device-pixel-ratio:2),
 (-webkit-min-device-pixel-ratio:3),
@@ -244,6 +243,63 @@ html{
   }
   .base-info{
     order:-1;
+  }
+}
+
+/*print site style*/
+@media print {
+  #app{
+    position: relative;
+  }
+  .App-header{
+    display: none;
+  }
+  .base-wrapper{
+    top:0;
+  }
+  .service-company,
+  .shadow-layout
+  {
+    border-bottom:1px dashed #ccc;
+    border-radius:0;
+    box-shadow:none;
+  }
+  .base-info,
+  .project-experience{
+    padding:0;
+  }
+  .base-info,
+  .project-experience{
+    padding:0 20px;
+  }
+  .base-info .name,
+  .base-info .base-info-list{
+    width: 50%;
+    display: inline-block;
+  }
+  .base-info .base-info-list{
+    margin-bottom: 10px;
+    margin-top:0;
+  }
+  .base-info .mySkill{
+    margin-bottom: 10px;
+  }
+  .service-company .company:last-child{
+    border-bottom: none;
+    padding-bottom:0!important;
+  }
+  .project-experience .service-company{
+    padding-bottom:0!important;
+  }
+  .work-experience{
+    padding-top:0!important;
+    padding-bottom:0!important;
+  }
+  .project-experience .service-company:last-child{
+    border-bottom: none;
+  }
+  .service-company .company{
+    border-bottom:1px dashed #ccc;
   }
 }
 

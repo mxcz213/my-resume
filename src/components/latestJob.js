@@ -3,7 +3,7 @@ import React from 'react';
 export default class LatestJob extends React.Component {
 	render(){
 		return (
-			<div className="latest-job shadow-layout font-0 mb20">
+			<div className="latest-job shadow-layout font-0 mb10">
 				<div className="inline-block job">
 					<h4 className="title">最近工作</h4>
 					<p>职位：web前端开发工程师</p>
