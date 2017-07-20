@@ -266,7 +266,10 @@ html{
   }
   .base-info,
   .project-experience{
-    padding:0;
+    padding:0!important;
+  }
+  .base-info .shadow-layout{
+    padding-top:0!important;
   }
   .base-info,
   .project-experience{
