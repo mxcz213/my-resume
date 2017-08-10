@@ -11,7 +11,7 @@ module.exports = {
 	},
 	output:{
 		filename:'dist/js/[name].dev.js',
-		path:path.resolve(__dirname,'dist/js')
+		path:path.resolve(__dirname,'build')
 	},
 	resolve:{
 		extensions:['.js','.jsx','.css']

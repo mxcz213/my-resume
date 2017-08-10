@@ -61,7 +61,7 @@ exports["page"] =
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d957cc44f223b1762f7a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7291c1c2a8a813ef8151"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -24174,6 +24174,11 @@ var Project = function (_React$Component) {
 
 		_this.state = {
 			project: [{
+				name: '图文资讯（暂未上线）',
+				company: 'PPTV',
+				description: '主要是做官宣页面，用户入住流程，以及入驻成功之后的用户控制台（包括文章内容创作，文章统计，账号管理等），项目采用的技术栈是reactJs、webpack、es6、antd，由于资源紧缺，前端由我主导，主管做技术支持，做好框架搭建，以便后续新进人员可以进行模块开发。',
+				href: '暂未上线'
+			}, {
 				name: '聚力云',
 				company: 'PPTV',
 				description: '主要是做官网的开发以及用户后台的业务逻辑的处理，原生的javascript写业务逻辑和定制组件开发，MVC模式架构，echart 做图表，template 模板结合，前后端分离，跨域调接口等。',
