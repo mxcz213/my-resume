@@ -13,6 +13,7 @@ export default class AccountInfo extends React.Component {
 			sex:'女',
 			hf:'未婚',
 			location:'上海',
+			mysite:'www.hecj.club',
 			phone:'13564329531',
 			qq:'496182124@qq.com'
 		}
@@ -55,6 +56,9 @@ export default class AccountInfo extends React.Component {
 				</div>
 				<div className="base-info-list">
 					<span className="inline-block">社交账号：{this.state.qq}</span>
+				</div>
+				<div className="base-info-list">
+					<span className="inline-block">我的站点：{this.state.mysite}</span>
 				</div>
 				<div className="base-info-list">					
 					<a className="inline-block mr20" href="https://github.com/mxcz213" rel="noopener noreferrer">

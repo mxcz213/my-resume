@@ -61,7 +61,7 @@ exports["page"] =
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7291c1c2a8a813ef8151"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fa1d159b74e9e35b0223"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -23523,6 +23523,7 @@ var AccountInfo = function (_React$Component) {
 			sex: '女',
 			hf: '未婚',
 			location: '上海',
+			mysite: 'www.hecj.club',
 			phone: '13564329531',
 			qq: '496182124@qq.com'
 		};
@@ -23623,6 +23624,16 @@ var AccountInfo = function (_React$Component) {
 						{ className: 'inline-block' },
 						'\u793E\u4EA4\u8D26\u53F7\uFF1A',
 						this.state.qq
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'base-info-list' },
+					_react2.default.createElement(
+						'span',
+						{ className: 'inline-block' },
+						'\u6211\u7684\u7AD9\u70B9\uFF1A',
+						this.state.mysite
 					)
 				),
 				_react2.default.createElement(
