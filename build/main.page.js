@@ -61,7 +61,7 @@ exports["page"] =
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "fa1d159b74e9e35b0223"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "717539b198c0ec5d30a0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -23638,7 +23638,7 @@ var AccountInfo = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'base-info-list' },
+					{ className: 'base-info-list print-hidden' },
 					_react2.default.createElement(
 						'a',
 						{ className: 'inline-block mr20', href: 'https://github.com/mxcz213', rel: 'noopener noreferrer' },

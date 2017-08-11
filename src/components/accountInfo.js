@@ -60,7 +60,7 @@ export default class AccountInfo extends React.Component {
 				<div className="base-info-list">
 					<span className="inline-block">我的站点：{this.state.mysite}</span>
 				</div>
-				<div className="base-info-list">					
+				<div className="base-info-list print-hidden">					
 					<a className="inline-block mr20" href="https://github.com/mxcz213" rel="noopener noreferrer">
 						<img width="30" height="30" src={github} className="icon-logo" alt="github" />
 					</a>

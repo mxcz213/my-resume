@@ -257,6 +257,9 @@ html{
   .base-wrapper{
     top:0;
   }
+  .print-hidden{
+    display: none!important;
+  }
   .service-company,
   .shadow-layout
   {

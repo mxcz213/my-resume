@@ -22821,7 +22821,7 @@ var AccountInfo = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'base-info-list' },
+					{ className: 'base-info-list print-hidden' },
 					_react2.default.createElement(
 						'a',
 						{ className: 'inline-block mr20', href: 'https://github.com/mxcz213', rel: 'noopener noreferrer' },
